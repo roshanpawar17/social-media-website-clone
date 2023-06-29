@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&family=Orbitron&family=Shadows+Into+Light&family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.container{
+    display: flex;
+    /* border: 2px solid; */
+}
+
+ /* nav bar */
+/*.side-navbar{   
+    max-width: 20rem;       
+    background: rgba(0, 0, 26, 0.89);
+    height: 100vh;
+    position: fixed;
+}*/
+.app-name{
+    color: white;
+    padding: 20px;
+    text-align: center;
+    /* font-size: 15px; */
+}
+.app-name i{
+    cursor: pointer;
+}
+ul{
+    margin: 0px 35px;
+    /* margin-left: 30px; */
+    list-style-type: none;
+}
+ul li{
+    padding: 23px;
+    margin-left: -3px;
+}
+ul li:hover{
+    background: rgb(0, 0, 26);
+    border-radius: 5px;
+}
+li i{
+    color: white;
+}
+li a{
+    color: white;
+    text-decoration: none;
+    padding: 0px 20px;
+    font-size: 18px;
+}
+
+/* sub-container */
+.sub-container{
+    display: flex;
+    flex-direction: column;
+    /* border: 5px solid; */
+    width: 82.2%;
+    margin-left: 5px;
+}
+
+ /* search box */
+.search-box-nd-md{
+    /* border: 2px solid; */
+    height: 100px;
+    position: fixed;
+}
+
+.serach-box{
+/*    display: flex;
+    flex-direction: column;*/
+    align-items: center;
+    position: fixed;
+    top: 18px;
+    left: 37rem;
+}
+
+.s-ul{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    width: 25rem;
+    /*height: 4vh;*/
+    font-size: 17px;
+    padding: 5px;
+}
+input:focus{
+    outline-style: none;
+}
+.fa-magnifying-glass{
+    border: 1px solid;
+    height: 6vh;
+    padding: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -1px;
+    background-color: azure;
+    cursor: pointer;
+}
+.fa-magnifying-glass:hover{
+    background: rgb(204, 255, 230);
+}
+.mode{
+    position: fixed;
+    right: 2em;
+    top: 25px;
+    font-size: 30px;
+}
+.fa-circle-half-stroke{
+    cursor: pointer;
+}
+.mode #mode-light-dark{
+    font-size: 18px;
+}
+.dark-mode{
+    background: rgba(19, 18, 18, 0.884);
+    color: white;
+}
+
+
+/* posts */
+
+.posts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15em;
+    /* border: 2px solid; */
+    margin-left: 33.5em;
+}
+
+.post{
+    border: 1px dotted;
+    width: 30rem;
+    min-height: 25rem;
+    margin-bottom: 30px;
+    overflow-y: hidden;
+    padding: 10px;
+}
+
+/* post header */
+.post-heading{
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+}
+
+.post-heading #username{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* post-body */
+.post-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.post-body img{
+    width: 22rem;
+    /* height: 18rem; */
+    aspect-ratio: 1/1.1;
+    border-radius: 3px;
+}
+
+/* post footer */
+.post-footer{
+    /* border: 2px solid red; */
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.post-footer .read-more{
+    padding: 10px;
+    margin-left: 5em;
+    margin-right: 20px;  
+    background: #6600ff;
+    border-radius: 3px;
+    border: none;
+    
+}
+
+.post-footer .read-more:hover{
+    background: #3d0099;
+}
+
+.post-footer .read-more a{
+    text-decoration-line: none;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.post-footer .fa-solid{
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+}
+
+.post-footer #like, #comment{
+   margin-right: 10px;
+   width: 5rem;
+   background: #6600ff;
+   color: white;
+   border: none;
+   border-radius: 3px;
+   font-family: 'Orbitron', sans-serif;
+}
+
+.post-footer #like{
+    cursor: pointer;
+}
+
+.post-footer #like:hover, #comment:hover{
+    background: #3d0099;
+}
+
+
+

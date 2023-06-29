@@ -1,0 +1,148 @@
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+/* ------------sub-container-1------------ */
+.sub-container-1{
+    display: flex;
+    flex-direction: row;
+}
+.profileContainer{
+    /* border: 2px solid; */
+    height: 99vh;
+    width: 82vw;
+    margin-left: 15em;
+}
+.profile{
+    border: 1px dotted black;
+    width: 38em;
+    height: 30em;
+    margin-left: 6em;
+    margin-top: 3em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+/* profile header */
+.bgImg img{
+    width: 38em;
+    aspect-ratio: 2/0.9;
+}
+.profileImg img{
+    height: 140px;
+    width: 140px;
+    border-radius: 70px;
+    outline: 5px solid white;
+    position: absolute;
+    top: 12em;
+    left: 2em;
+}
+
+/* profile body */
+.profile-body{
+    margin-top: 4em;
+    margin-left: 2em;
+}
+.profile-body .n-fbtn{
+    display: flex;
+}
+.profile-body .n-fbtn #fbtn{
+    margin-left: 20px;
+    padding: 7px;
+    background: #6600ff;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+.profile-body .n-fbtn #fbtn:hover{
+    background: #3d0099;
+}
+.profile-body h4{
+    color: rgba(0, 0, 0, 0.699);
+}
+.profile-body p{
+    color: rgba(0, 0, 0, 0.699);
+    margin-top: 13px;
+}
+.profile-body .followers-following{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+.profile-body .followers-following .f-f{
+    cursor: pointer;
+} 
+.profile-body .followers-following .f-f:hover{
+    color: black;
+}
+
+/* display-followers-following */
+.display-followers-following{
+    /* border: 1px solid; */
+    height: 90vh;
+    width: 30em;
+    margin-right: 2em;
+}
+.display-followers-following .p-f-f{
+    display: flex;
+    flex-direction: column;
+    
+}
+.display-followers-following .p-f-f .f-body{
+    overflow-y: auto;
+    height: 74vh;
+}
+.display-followers-following .p-f-f h3{
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.display-followers-following .p-f-f .p-f-f-users{
+    display: flex;
+    align-items: center;
+    /* border: 1px solid; */
+    margin-left: 2em;
+    padding: 10px;
+}
+
+#following, #followers{
+    display: none;
+}
+
+/* ---------------sub-container-2------------------- */
+.sub-container-2{
+    /* border: 2px solid; */
+    width: 68em;
+    margin-left: 16em;
+    height: 100vh;
+    margin-top: -3em;
+}
+#u-posts{
+    text-align: center;
+    margin: 10px;
+    
+}
+.users-posts{
+    /* border: 2px solid; */
+    width: 43em;
+    margin: auto;
+    height: 50vh;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.users-posts img{
+    width: 18em;
+    aspect-ratio: 1/1;
+    /* padding: 10px; */
+    margin: 5px;
+    border: 1px solid;
+}
+.users-posts img:hover{
+    transform: scale(1.1);
+    border: 1px solid black;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.849);
+}
+

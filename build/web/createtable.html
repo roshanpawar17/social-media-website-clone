@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+    <!--users info-->
+    CREATE TABLE users(
+        id int(20) NOT null AUTO_INCREMENT PRIMARY KEY,
+        username varchar(25) NOT null UNIQUE,
+        firstname varchar(20) NOT null,
+        lastname varchar(20) NOT null,
+        fullname varchar(50) NOT null,
+        email varchar(40) NOT null,
+        password varchar(25) NOT null,
+        datetime varchar(50) NOT null ,
+        defaultprofile varchar(100) NOT null DEFAULT 'default.png'
+    )
+    
+    <!--bio-->
+    CREATE table description(
+	idbio int(20) not null AUTO_INCREMENT PRIMARY key,
+        bio varchar(500),
+        idabout int(20) not null,
+        FOREIGN key(idabout) REFERENCES users(id)
+    )
+    
+    
+    <!--post-->
+    CREATE table posts(
+		pid int(20) not null AUTO_INCREMENT PRIMARY key,
+        location varchar(20),
+        post varchar(20) not null,
+    	caption varchar(500),
+    	idpost int(20) NOT null,
+        FOREIGN key(idpost) REFERENCES users(id)
+);
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function (){
+           console.log("loaded");
+           $('#savebio').on('click',function(e){
+               e.preventDefault();
+               let myid=$('#id').val();
+               let mybio=$('.about-me').val();
+               
+               $.ajax({
+                   url: "addbio",
+                   type: "POST",
+                   data: {id:myid,bio:mybio},
+                   success: function(data){
+                       
+                   }
+               });
+               
+           });
+        });
+    </script>
+);
+); 
+
+    </body>
+</html>

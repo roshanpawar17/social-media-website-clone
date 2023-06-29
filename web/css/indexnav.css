@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Ubuntu&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            display: flex;
+            width: 100%;
+            opacity: .7;
+        }
+/*        nav:hover{
+            background-color: rgb(224, 224, 224);
+            border-radius: 0px 0px 20px 20px;
+        }*/
+        .logo{
+            height: 80px;
+            width: 80px;
+            border-radius: 50px;
+            margin: 10px 10px;
+        }
+        h1{
+            display: flex;
+            align-items: center;
+            font-family: 'Pacifico', cursive;
+        }
+        .buttons{
+            position: absolute;
+            right: 5em;
+            top: 27px;
+        }
+        button{
+            padding: 13px;
+            margin: 0px 5px;
+            background-color:rgb(26, 35, 126);
+            /* border-color: white; */
+            border-radius: 20px;
+            border: none;
+        }
+        button:hover{
+            background-color: rgb(74, 20, 140);
+        }
+        a{
+            text-decoration-line: none;
+            color: white;
+        }
+        .image{
+            width: 50%;
+            height: 90vh;
+            position: fixed;
+            z-index: -1;
+        }
+        .msg{
+            width: 30%;
+            position: fixed;
+            right: 10em;
+            top: 16em;
+        }
+        .msg h3{
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+
